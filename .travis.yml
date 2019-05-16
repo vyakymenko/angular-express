@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+  "10"
+
+env:
+  - CXX=g++-4.8
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+
+sudo: false
+
+before_script:
+  - npm install
+
+branches:
+  only: master
+
+notifications:
+  email: true
+
+script:
+  - npm run ci
+
+cache:
+  directories:
+    - node_modules

@@ -21,7 +21,8 @@
     "server.run": "npm run server.watch & nodemon dist/server/app.js",
     "build.dev": "npm run server.build && ng build",
     "build.prod": "npm run server.build && ng build --prod",
-    "run.prod": "pm2 start dist/server/app.js"
+    "run.prod": "pm2 start dist/server/app.js",
+    "ci": "ng test --watch=false && npm run build.prod"
   },
   "dependencies": {
     "@angular/animations": "~7.2.0",
