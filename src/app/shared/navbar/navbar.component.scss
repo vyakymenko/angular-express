@@ -1,5 +1,7 @@
+@import "~src/scss/variables";
+
 :host {
-  border: 0 solid #e1e1e1;
+  border: 0 solid $border-color;
   border-bottom-width: 1px;
   display: block;
   height: 48px;
@@ -7,7 +9,7 @@
 }
 
 nav a {
-  color: #8f8f8f;
+  color: $link-color;
   font-size: 14px;
   font-weight: 500;
   line-height: 48px;
@@ -18,5 +20,5 @@ nav a {
 }
 
 nav a.router-link-active {
-  color: #106cc8;
+  color: $main-color;
 }

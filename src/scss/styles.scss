@@ -1,3 +1,5 @@
+@import "~src/scss/variables";
+
 /* You can add global styles to this file, and also import other style files */
 html, body, div {
   border: 0;
@@ -47,7 +49,7 @@ li {
 }
 
 input {
-  border: 1px solid #106cc8;
+  border: 1px solid $main-color;
   font-size: 14px;
   height: 40px;
   outline: none;
@@ -55,7 +57,7 @@ input {
 }
 
 button {
-  background-color: #106cc8;
+  background-color: $main-color;
   border-style: none;
   color: rgba(255, 255, 255, 0.87);
   cursor: pointer;
@@ -67,5 +69,5 @@ button {
 }
 
 button:hover {
-  background-color: #28739e;
+  background-color: $button-hover-color;
 }
