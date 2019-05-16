@@ -21,9 +21,8 @@ export class NameListService {
    * Returns an Observable for the HTTP GET request for the JSON resource.
    */
   get(): Observable<string[]> {
-    return of([]);
-    // return this.http.get<string[]>(`name-list/static`)
-    //   .pipe(catchError(this.handleError));
+    return this.http.get<string[]>(`name-list/static`)
+      .pipe(catchError(this.handleError));
   }
 
   /**
@@ -36,7 +35,8 @@ export class NameListService {
       error.status ? `${error.status} - ${error.statusText}` : 'Server error';
     console.error(errMsg); // log to console instead
 
-    return of(errMsg);
+    // return of(errMsg);
+    return of([]);
   }
 }
 

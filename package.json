@@ -1,6 +1,7 @@
 {
   "name": "angular-express",
   "version": "0.0.0",
+  "description": "Modular starter project for Full Stack Angular 2  (and beyond) / Express with Angular CLI",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
