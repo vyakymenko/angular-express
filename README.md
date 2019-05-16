@@ -25,9 +25,6 @@ Modular starter project for Angular 2 (and beyond) with Angular CLI and Express
 
 # Fast start
 
-For Angular development information and wiki, look here:
-- Official [Angular Docs](https://angular.io/docs)
-
 ```bash
 git clone --depth 1 https://github.com/vyakymenko/angular-express
 cd angular-express
@@ -50,6 +47,10 @@ $ shutdown SAVE
 # run server in daemon mode
 $ npm run run.prod
 ```
+
+For Angular development information and wiki, look here:
+
+- Official [Angular Docs](https://angular.io/docs)
 
 # Express Server
 
