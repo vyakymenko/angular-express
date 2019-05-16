@@ -1,7 +1,7 @@
 {
   "name": "angular-express",
   "version": "0.0.0",
-  "description": "Modular starter project for Full Stack Angular 2  (and beyond) / Express with Angular CLI",
+  "description": "Modular starter project for Full Stack Angular 2 (and beyond)/Express with Angular CLI, PM2",
   "repository": {
     "type": "git",
     "url": "https://github.com/vyakymenko/angular-express"
@@ -9,6 +9,7 @@
   "scripts": {
     "ng": "ng",
     "nodemon": "nodemon",
+    "pm2": "pm2",
     "start": "npm run server.watch & nodemon dist/server/app.js & ng serve",
     "client.build": "ng build",
     "client.test": "ng test",
@@ -16,7 +17,11 @@
     "client.e2e": "ng e2e",
     "client.watch": "ng build --watch",
     "server.build": "tsc -p server",
-    "server.watch": "tsc -p server -watch"
+    "server.watch": "tsc -p server -watch",
+    "server.run": "npm run server.watch & nodemon dist/server/app.js",
+    "build.dev": "npm run server.build && ng build",
+    "build.prod": "npm run server.build && ng build --prod",
+    "run.prod": "pm2 start dist/server/app.js"
   },
   "dependencies": {
     "@angular/animations": "~7.2.0",
@@ -35,6 +40,7 @@
     "compression": "^1.7.4",
     "core-js": "^2.5.4",
     "express": "^4.16.4",
+    "pm2": "^3.5.0",
     "redis": "^2.8.0",
     "rxjs": "~6.5.2",
     "tslib": "^1.9.0",
