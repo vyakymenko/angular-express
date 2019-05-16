@@ -69,7 +69,7 @@ For daemonize your server I propose to uze `PM2`.
 $ npm run.prod
 
 # restart only your project
-$ pm restart <id>
+$ pm2 restart <id>
 # restart all project on daemon
 $ pm2 restart all
 
