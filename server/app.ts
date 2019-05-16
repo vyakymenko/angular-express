@@ -7,10 +7,6 @@ import * as routes from './routes';
 
 import { Init } from './db/redis';
 
-/**
- * Client Dir
- * @note `dev` default.
- */
 const _clientDir = '../angular-express';
 
 const app: express.Application = express();
@@ -22,6 +18,15 @@ app.use(compression());
 
 // DB Init
 Init();
+
+if (process.env.NODE_ENV && process.env.NODE_ENV === 'development') {
+
+  app.all('/*', (req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'X-Requested-With');
+    next();
+  });
+}
 
 /**
  * Api Routes
