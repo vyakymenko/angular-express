@@ -55,6 +55,8 @@
     "@angular/cli": "~7.3.9",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
+    "@cypress/webpack-preprocessor": "^4.0.3",
+    "cypress": "^3.2.0",
     "@bahmutov/add-typescript-to-cypress": "^2.1.0",
     "@types/jasmine": "~3.3.12",
     "@types/jasminewd2": "~2.0.3",
@@ -72,9 +74,5 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.2.2"
-  },
-  "optionalDependencies": {
-    "@cypress/webpack-preprocessor": "^4.0.3",
-    "cypress": "^3.2.0"
   }
 }
