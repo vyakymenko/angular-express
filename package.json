@@ -25,7 +25,7 @@
     "e2e.run": "node dist/server/app.js & cypress run",
     "e2e": "npm run build.prod && npm run e2e.run",
     "run.prod": "pm2 start dist/server/app.js",
-    "ci": "ng test --watch=false && npm run build.prod && e2e"
+    "ci": "ng test --watch=false && npm run build.prod && npm run e2e"
   },
   "dependencies": {
     "@angular/animations": "~7.2.0",
