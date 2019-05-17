@@ -15,7 +15,7 @@ Modular starter project for Angular 2 (and beyond) with Angular CLI and Express
 - Official Angular CLI features support.
 - Ready to go, statically typed build system for working with TypeScript.
 - Production and development builds.
-- (TODO) End-to-end tests with Cypress.
+- End-to-end tests with Cypress.
 - Express Server
 - (TODO) Provides full Docker support for both development and production environment
 - Following the [best practices](https://angular.io/guide/styleguide).
