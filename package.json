@@ -25,6 +25,7 @@
     "e2e.run": "node dist/server/app.js & cypress run",
     "e2e": "npm run build.prod && npm run e2e.run",
     "run.prod": "pm2 start dist/server/app.js",
+    "ci.circle": "ng test --watch=false && npm run build.prod",
     "ci": "ng test --watch=false && npm run build.prod && npm run e2e"
   },
   "dependencies": {
