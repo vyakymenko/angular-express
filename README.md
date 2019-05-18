@@ -66,8 +66,13 @@ TODO
 - [Express Server](#express-server)
 - [Daemonize Server](#daemonize-server)
 - [How to update](#how-to-update)
+- [Running tests](#running-tests)
 - [How to configure my NginX](#how-to-configure-my-nginx)
 - [Reverse Proxy NginX Config Example](#reverse-proxy-nginx-config-example)
+- [Redis](#redis)
+- [Mongo](#mongo)
+- [MySQL](#mysql)
+- [Contributing](#contributing)
 
 # Express Server
 
@@ -219,13 +224,15 @@ server {
 }
 ```
 
-# Redis Download and Install
+# Redis
+
+## Redis Download and Install
 
  - About [Redis](http://redis.io/).
  - [Download](http://redis.io/download#download) and [install](http://redis.io/download#installation) latest stable version of Redis.
  - [Documentation](http://redis.io/documentation) about Redis.
 
-# Redis Start
+## Redis Start
 
 After installation we need to start our server:
 ```sh
@@ -233,12 +240,12 @@ After installation we need to start our server:
 $ src/redis-server
 ```
 
-# Redis More Settings + Daemonize
+## Redis More Settings + Daemonize
 
  - Redis [Persistence](http://redis.io/topics/quickstart#redis-persistence)
  - Redis [More Properties](http://redis.io/topics/quickstart#installing-redis-more-properly)
 
-# MongoDB
+# Mongo
 
  - In progress
 
