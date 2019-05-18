@@ -1,10 +1,12 @@
 # Introduction
 
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![Gitter](https://badges.gitter.im/express-angular/community.svg)](https://gitter.im/express-angular/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![CircleCI](https://circleci.com/gh/vyakymenko/angular-express.svg?style=svg)](https://circleci.com/gh/vyakymenko/angular-express)
 [![Build Status](https://travis-ci.org/vyakymenko/angular-express.svg?branch=master)](https://travis-ci.org/vyakymenko/angular-express)
 [![dependencies Status](https://david-dm.org/vyakymenko/angular-express/status.svg)](https://david-dm.org/vyakymenko/angular-express)
-[![devDependencies Status](https://david-dm.org/vyakymenko/angular-express/dev-status.svg)](https://david-dm.org/vyakymenko/angular-express?type=dev) [![Greenkeeper badge](https://badges.greenkeeper.io/vyakymenko/angular-express.svg)](https://greenkeeper.io/)
+[![devDependencies Status](https://david-dm.org/vyakymenko/angular-express/dev-status.svg)](https://david-dm.org/vyakymenko/angular-express?type=dev)
+[![Greenkeeper badge](https://badges.greenkeeper.io/vyakymenko/angular-express.svg)](https://greenkeeper.io/)
 
 Modular starter project for Angular 2 (and beyond) with Angular CLI and Express
 
@@ -52,6 +54,21 @@ For Angular development information and wiki, look here:
 
 - Official [Angular Docs](https://angular.io/docs)
 
+# Dockerization
+
+TODO
+
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Fast start](#fast-start)
+- [Table of Content](#table-of-content)
+- [Express Server](#express-server)
+- [Daemonize Server](#daemonize-server)
+- [How to update](#how-to-update)
+- [How to configure my NginX](#how-to-configure-my-nginx)
+- [Reverse Proxy NginX Config Example](#reverse-proxy-nginx-config-example)
+
 # Express Server
 
 Express server run for prod build.
@@ -78,6 +95,16 @@ $ pm2 start dist/server/app.js -i 4
 ```
 
 More details about [PM2](http://pm2.keymetrics.io/)
+
+# How to update
+```
+git remote add upstream https://github.com/vyakymenko/angular-express
+git pull upstream master
+```
+
+# Running tests
+
+TODO
 
 # How to configure my NginX
 
@@ -172,7 +199,6 @@ http {
 
 You can look in source file [here](https://github.com/vyakymenko/angular-nginx-config-example/blob/master/ng2-application.conf).
 
-
 # Reverse Proxy NginX Config Example
 ```
 server {
@@ -193,7 +219,7 @@ server {
 }
 ```
 
-# Redis Download/Install
+# Redis Download and Install
 
  - About [Redis](http://redis.io/).
  - [Download](http://redis.io/download#download) and [install](http://redis.io/download#installation) latest stable version of Redis.
@@ -220,9 +246,13 @@ $ src/redis-server
 
  - In progress
 
-# Change Log
+# Contributing
 
-You can follow the [Angular change log here](https://github.com/angular/angular/blob/master/CHANGELOG.md).
+Please see the [CONTRIBUTING](https://github.com/mgechev/angular-seed/blob/master/.github/CONTRIBUTING.md) file for guidelines.
+
+# Changelog
+
+You can follow the [Angular changelog here](https://github.com/angular/angular/blob/master/CHANGELOG.md).
 
 # License
 
