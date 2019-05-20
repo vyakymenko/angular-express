@@ -10,8 +10,8 @@ services:
     container_name: angular-express
     image: angular-express/dev
     volumes:
-      - ./src:/home/node/angular-express/ui
-      - ./src:/home/node/angular-express/server
+      - ./ui:/home/node/angular-express/ui
+      - ./server:/home/node/angular-express/server
     networks:
       - dev-network
     ports:

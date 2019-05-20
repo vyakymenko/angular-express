@@ -6,6 +6,7 @@ WORKDIR /home/node/angular-express
 # The 'src' directory will be mounted as a shared volume by docker-compose (allowing for live-reload)
 COPY package.json .
 COPY package-lock.json .
+COPY angular.json .
 COPY tsconfig.json .
 COPY tslint.json .
 COPY .docker/rm.optional.deps.js ./.docker/rm.optional.deps.js
