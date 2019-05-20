@@ -7,6 +7,7 @@ WORKDIR /home/node/angular-express
 COPY package.json .
 COPY package-lock.json .
 COPY angular.json .
+COPY nodemon.json .
 COPY tsconfig.json .
 COPY tslint.json .
 COPY .docker/rm.optional.deps.js ./.docker/rm.optional.deps.js
