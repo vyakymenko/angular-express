@@ -16,7 +16,7 @@ Extensible, reliable and modular starter project for Angular 2 (and beyond) with
 - Allows you to painlessly update of already existing project.
 - Official Angular CLI features support.
 - Ready to go, statically typed build system for working with TypeScript.
-- Production and development builds.
+- Production and Development builds.
 - End-to-end tests with Cypress.
 - Provides full Docker support for both development and production environment
 - Following the [best practices](https://angular.io/guide/styleguide).
