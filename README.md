@@ -65,6 +65,10 @@ For Angular development information and wiki, look here:
 - [Daemonize Server](#daemonize-server)
 - [How to update](#how-to-update)
 - [Running tests](#running-tests)
+- [Dockerization](#dockerization)
+  + [Development build and deployment](#development-build-and-deployment)
+  + [Production build and deployment](#production-build-and-deployment)
+  + [Updating dependencies and sources](#updating-dependencies-and-sources)
 - [How to configure my NginX](#how-to-configure-my-nginx)
 - [Reverse Proxy NginX Config Example](#reverse-proxy-nginx-config-example)
 - [Redis](#redis)
@@ -138,6 +142,19 @@ Now open your browser at http://localhost:4200
 ## Production build and deployment
 
 TODO
+
+## Updating dependencies and sources
+If you are not already familiar with Docker, please note that for both Dev and Prod docker environments, updates to
+npm dependencies will be visible only after re-building the image and restarting a new container from it.
+
+In Dev environment, this only applies to npm dependencies, since the sources are mounted as a shared directory.
+In Prod environment, this applies to any change in the project.
+
+To force docker-compose to rebuild the image before starting the container, use the --build flag:
+
+```bash
+$ docker-compose -f docker-compose.dev.yml up -d --build
+```
 
 # How to configure my NginX
 
