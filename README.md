@@ -137,7 +137,7 @@ Please note that prod and dev are built into their own separate image, which can
 npm dependencies and the state of the sources in the container, if you are not familiar with Docker. See below.
 
 Please also note that karma tests (`npm test`) are independent from the docker environment.
-Even if an angular-seed container is up and running, karma will run in the context of your **local** npm install,
+Even if an angular-express container is up and running, karma will run in the context of your **local** npm install,
 which may differ from that of the container. In fact, the docker containers don't have karma installed at all.
 
 Cypress tests are however fully supported and recommended to test the app served by either the dev or prod docker containers.  
@@ -316,7 +316,7 @@ $ src/redis-server
 
 # Contributing
 
-Please see the [CONTRIBUTING](https://github.com/mgechev/angular-seed/blob/master/.github/CONTRIBUTING.md) file for guidelines.
+Please see the [CONTRIBUTING](https://github.com/vyakymenko/angular-express/blob/master/.github/CONTRIBUTING.md) file for guidelines.
 
 # Changelog
 
