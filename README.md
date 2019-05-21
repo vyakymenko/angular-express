@@ -122,9 +122,6 @@ $ npm run test.watch
 # You can raise the maximum of file descriptors by running the command below:
 $ ulimit -n 10480
 
-# code coverage
-$ npm run test
-
 # e2e (aka. end-to-end, integration)  - In two different shell windows
 $ npm run e2e
 
