@@ -15,7 +15,7 @@ services:
     networks:
       - dev-network
     ports:
-      - '4200:4200'
+      - '80:4200'
       - '3000:3000'
 
 networks:

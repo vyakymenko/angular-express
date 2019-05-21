@@ -11,7 +11,7 @@
     "ng": "ng",
     "nodemon": "nodemon",
     "pm2": "pm2",
-    "start": "npm run server.watch & nodemon dist/server/app.js & ng serve",
+    "start": "npm run server.watch & nodemon dist/server/app.js & ng serve --host 0.0.0.0",
     "client.build": "ng build",
     "client.test": "ng test",
     "client.lint": "ng lint",
