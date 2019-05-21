@@ -22,7 +22,7 @@ Extensible, reliable and modular starter project for Angular 2 (and beyond) with
 - Following the [best practices](https://angular.io/guide/styleguide).
 - Support for Angular Mobile Toolkit
 - (TODO) Allows you to analyze the space usage of created bundles by using source-map-explorer
-- [Express](https://expressjs.com/) Express Node.js server for production/development build API.
+- [Express](https://expressjs.com/) Node.js server for production/development build API.
 - [PM2](http://pm2.keymetrics.io/) daemon for a server running.
 - [Nginx](https://github.com/vyakymenko/angular-nginx-config-example/blob/master/ng2-application.conf) configuration file for your server.
 
