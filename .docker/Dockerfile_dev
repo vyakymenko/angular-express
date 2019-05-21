@@ -1,24 +1,22 @@
+# base image
 FROM node:10.15
-EXPOSE 4200
 
-WORKDIR /home/node/angular-express
+# set working directory
+WORKDIR /app
 
-# NB: Only copy files that are required by 'npm install'
-# The 'src' directory will be mounted as a shared volume by docker-compose (allowing for live-reload)
-COPY package.json .
-COPY package-lock.json .
-COPY angular.json .
-COPY nodemon.json .
-COPY tsconfig.json .
-COPY tslint.json .
-COPY .docker/rm.optional.deps.js ./.docker/rm.optional.deps.js
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
 
-# before switching to non-root user, change ownership of home
-RUN chown -R node:node .
-USER node
-
-# NB: this is a workaround due to the fact that npm '--no-optional' flag doesn't work (open script below for more)
-RUN node .docker/rm.optional.deps.js
-
-RUN npm install -g @angular/cli
+# install and cache app dependencies
+COPY package.json /app/package.json
+COPY nodemon.json /app/nodemon.json
 RUN npm install --no-optional
+RUN npm install -g @angular/cli@7.3.9
+
+# add app
+COPY . /app
+
+# start app
+CMD npm start
+# CMD ng serve --host 0.0.0.0
+# RUN npm run server.run

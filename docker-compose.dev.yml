@@ -1,23 +1,15 @@
-version: '3'
+version: '3.7'
 
 services:
 
-  web:
+  angular-express:
+    container_name: angular-express
     build:
       context: .
       dockerfile: ./.docker/Dockerfile_dev
-    command: npm start
-    container_name: angular-express
-    image: angular-express/dev
     volumes:
-      - ./ui:/home/node/angular-express/ui
-      - ./server:/home/node/angular-express/server
-    networks:
-      - dev-network
+      - '.:/app'
+      - '/app/node_modules'
     ports:
-      - '80:4200'
+      - '4200:4200'
       - '3000:3000'
-
-networks:
-  dev-network:
-    driver: bridge
