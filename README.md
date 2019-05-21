@@ -56,36 +56,6 @@ For Angular development information and wiki, look here:
 
 - Official [Angular Docs](https://angular.io/docs)
 
-# Dockerization
-
-The application provides full Docker support. You can use it for both development and production builds and deployments.
-
-Please note that prod and dev are built into their own separate image, which can lead to unexpected differences in the
-npm dependencies and the state of the sources in the container, if you are not familiar with Docker. See below.
-
-Please also note that karma tests (`npm test`) are independent from the docker environment.
-Even if an angular-seed container is up and running, karma will run in the context of your **local** npm install,
-which may differ from that of the container. In fact, the docker containers don't have karma installed at all.
-
-Cypress tests are however fully supported and recommended to test the app served by either the dev or prod docker containers.  
-
-## Development build and deployment
-
-The dev image only contains the npm libraries installed, but not the sources. The sources are mounted at runtime,
-via a docker shared volume, which allows for the live-reload feature to work.
- 
-To start the container, use:
-
-```bash
-$ docker-compose -f docker-compose.dev.yml up -d   # optional: --build, see below
-```
-
-Now open your browser at http://localhost:4200
-
-## Production build and deployment
-
-TODO
-
 # Table of Contents
 
 - [Introduction](#introduction)
@@ -136,6 +106,36 @@ git pull upstream master
 ```
 
 # Running tests
+
+TODO
+
+# Dockerization
+
+The application provides full Docker support. You can use it for both development and production builds and deployments.
+
+Please note that prod and dev are built into their own separate image, which can lead to unexpected differences in the
+npm dependencies and the state of the sources in the container, if you are not familiar with Docker. See below.
+
+Please also note that karma tests (`npm test`) are independent from the docker environment.
+Even if an angular-seed container is up and running, karma will run in the context of your **local** npm install,
+which may differ from that of the container. In fact, the docker containers don't have karma installed at all.
+
+Cypress tests are however fully supported and recommended to test the app served by either the dev or prod docker containers.  
+
+## Development build and deployment
+
+The dev image only contains the npm libraries installed, but not the sources. The sources are mounted at runtime,
+via a docker shared volume, which allows for the live-reload feature to work.
+ 
+To start the container, use:
+
+```bash
+$ docker-compose -f docker-compose.dev.yml up -d   # optional: --build, see below
+```
+
+Now open your browser at http://localhost:4200
+
+## Production build and deployment
 
 TODO
 
