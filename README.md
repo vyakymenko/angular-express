@@ -111,7 +111,27 @@ git pull upstream master
 
 # Running tests
 
-TODO
+```bash
+$ npm test
+
+# Development. Your app will be watched by karma
+# on each change all your specs will be executed.
+$ npm run test.watch
+# NB: The command above might fail with a "EMFILE: too many open files" error.
+# Some OS have a small limit of opened file descriptors (256) by default
+# and will result in the EMFILE error.
+# You can raise the maximum of file descriptors by running the command below:
+$ ulimit -n 10480
+
+# code coverage
+$ npm run test
+
+# e2e (aka. end-to-end, integration)  - In two different shell windows
+$ npm run e2e
+
+# e2e live mode - Using Cypress app - In two different shell windows
+$ npm run e2e.live
+```
 
 # Dockerization
 

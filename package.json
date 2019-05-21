@@ -27,6 +27,7 @@
     "e2e": "npm run build.prod && npm run e2e.run",
     "run.prod": "pm2 start dist/server/app.js",
     "test": "ng test --watch=false && npm run build.prod",
+    "test.watch": "ng test && npm run build.prod",
     "test.all": "ng test --watch=false && npm run build.prod && npm run e2e"
   },
   "optionalDependencies": {
