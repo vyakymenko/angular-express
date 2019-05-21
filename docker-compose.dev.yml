@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+
+  angular-express:
+    container_name: angular-express
+    build:
+      context: .
+      dockerfile: ./.docker/Dockerfile_dev
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - '4200:4200'
+      - '3000:3000'

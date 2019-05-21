@@ -19,7 +19,7 @@ Modular starter project for Angular 2 (and beyond) with Angular CLI and Express
 - Production and development builds.
 - End-to-end tests with Cypress.
 - Express Server
-- (TODO) Provides full Docker support for both development and production environment
+- Provides full Docker support
 - Following the [best practices](https://angular.io/guide/styleguide).
 - [Express](https://expressjs.com/) Express Node.js server for production/development build API.
 - [PM2](http://pm2.keymetrics.io/) daemon for a server running.

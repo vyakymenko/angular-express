@@ -35,7 +35,7 @@ notifications:
   email: true
 
 script:
-  - npm run ci.test.all
+  - npm run test.all
 
 cache:
   directories:

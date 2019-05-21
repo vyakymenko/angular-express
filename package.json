@@ -1,16 +1,17 @@
 {
   "name": "angular-express",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Modular starter project for Full Stack Angular 2 (and beyond)/Express with Angular CLI, PM2",
   "repository": {
     "type": "git",
     "url": "https://github.com/vyakymenko/angular-express"
   },
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "nodemon": "nodemon",
     "pm2": "pm2",
-    "start": "npm run server.watch & nodemon dist/server/app.js & ng serve",
+    "start": "npm run server.watch & nodemon dist/server/app.js & ng serve --host 0.0.0.0",
     "client.build": "ng build",
     "client.test": "ng test",
     "client.lint": "ng lint",
@@ -25,8 +26,22 @@
     "e2e.run": "node dist/server/app.js & cypress run",
     "e2e": "npm run build.prod && npm run e2e.run",
     "run.prod": "pm2 start dist/server/app.js",
-    "ci.test": "ng test --watch=false && npm run build.prod",
-    "ci.test.all": "ng test --watch=false && npm run build.prod && npm run e2e"
+    "test": "ng test --watch=false && npm run build.prod",
+    "test.all": "ng test --watch=false && npm run build.prod && npm run e2e"
+  },
+  "optionalDependencies": {
+    "@cypress/webpack-preprocessor": "^4.0.3",
+    "@bahmutov/add-typescript-to-cypress": "^2.1.0",
+    "@types/jasmine": "~3.3.12",
+    "@types/jasminewd2": "~2.0.3",
+    "cypress": "^3.2.0",
+    "jasmine-core": "~3.4.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~4.1.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~2.0.1",
+    "karma-jasmine-html-reporter": "~1.4.2"
   },
   "dependencies": {
     "@angular/animations": "~7.2.0",
@@ -56,22 +71,9 @@
     "@angular/cli": "~7.3.9",
     "@angular/compiler-cli": "~7.2.0",
     "@angular/language-service": "~7.2.0",
-    "@cypress/webpack-preprocessor": "^4.0.3",
-    "cypress": "^3.2.0",
-    "@bahmutov/add-typescript-to-cypress": "^2.1.0",
-    "@types/jasmine": "~3.3.12",
-    "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~5.0.1",
-    "jasmine-core": "~3.4.0",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~4.1.0",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~2.0.1",
-    "karma-jasmine": "~2.0.1",
-    "karma-jasmine-html-reporter": "~1.4.2",
     "nodemon": "^1.19.0",
-    "protractor": "~5.4.0",
     "ts-node": "~8.1.0",
     "tslint": "~5.16.0",
     "typescript": "~3.2.2"
