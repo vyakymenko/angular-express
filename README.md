@@ -8,11 +8,11 @@
 [![devDependencies Status](https://david-dm.org/vyakymenko/angular-express/dev-status.svg)](https://david-dm.org/vyakymenko/angular-express?type=dev)
 [![Greenkeeper badge](https://badges.greenkeeper.io/vyakymenko/angular-express.svg)](https://greenkeeper.io/)
 
-![Angular Express](https://raw.githubusercontent.com/vyakymenko/angular-express/master/.github/angular-express.jpg)
-
 Extensible, reliable and modular starter project for Angular 2 (and beyond) with Angular CLI, Express and PM2 Daemon. Production Ready Full-stack.
 
 **Want to have comfortable full-stack Angular development with Express? If _YES_ then, welcome to Angular Express!**
+
+![Angular Express](https://raw.githubusercontent.com/vyakymenko/angular-express/master/.github/angular-express.jpg)
 
 `angular-express` provides the following features:
 - Allows you to painlessly update of already existing project.
