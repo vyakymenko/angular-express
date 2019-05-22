@@ -19,6 +19,9 @@ export class NameListService {
    * Returns an Observable for the HTTP GET request for the JSON resource.
    */
   get(): Observable<string[]> {
+    // return this.http.get<string[]>(`name-list/redis`)
+    // return this.http.get<string[]>(`name-list/mysql`)
+    // return this.http.get<string[]>(`name-list/pgsql`)
     return this.http.get<string[]>(`name-list/static`)
       .pipe(catchError(this.handleError));
   }

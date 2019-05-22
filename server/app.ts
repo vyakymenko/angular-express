@@ -4,20 +4,34 @@ import * as bodyParser from 'body-parser';
 import * as path from 'path';
 import * as compression from 'compression';
 import * as routes from './routes';
+import * as morgan from 'morgan';
+import * as Knex from 'knex';
+import { Model } from 'objection';
+import { mysql } from './db/mysql';
 
-import { Init } from './db/redis';
+/** Redis */
+// import { Init } from './db/redis';
+// Init();
+
+/** MySQL */
+const knex = Knex(mysql.development);
+
+/** Bind all Models to a knex instance. If you only have one database in
+ *  your server this is all you have to do. For multi database systems, see
+ *  the Model.bindKnex method.
+ */
+Model.knex(knex);
 
 const _clientDir = '../angular-express';
 
 const app: express.Application = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use(bodyParser.text());
-app.use(compression());
-
-// DB Init
-Init();
+app
+  .use(bodyParser.urlencoded({ extended: false }))
+  .use(bodyParser.json())
+  .use(bodyParser.text())
+  .use(morgan('dev'))
+  .use(compression());
 
 if (process.env.NODE_ENV && process.env.NODE_ENV === 'development') {
 

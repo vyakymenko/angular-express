@@ -24,6 +24,7 @@ Extensible, reliable and modular starter project for Angular 2 (and beyond) with
 - Following the [best practices](https://angular.io/guide/styleguide).
 - Share interfaces between UI and Server
 - Support for Angular Mobile Toolkit
+- MySQL, PostgreSQL, Redis, Mongo Examples
 - (TODO) Allows you to analyze the space usage of created bundles by using source-map-explorer
 - [Express](https://expressjs.com/) Node.js server for production/development build API.
 - [PM2](http://pm2.keymetrics.io/) daemon for a server running.
@@ -73,9 +74,7 @@ For Angular development information and wiki, look here:
   + [Updating dependencies and sources](#updating-dependencies-and-sources)
 - [How to configure my NginX](#how-to-configure-my-nginx)
 - [Reverse Proxy NginX Config Example](#reverse-proxy-nginx-config-example)
-- [Redis](#redis)
-- [Mongo](#mongo)
-- [MySQL](#mysql)
+- [Databases Examples](#databases-examples)
 - [Contributing](#contributing)
 
 # Express Server
@@ -288,34 +287,14 @@ server {
 }
 ```
 
-# Redis
+# Databases Examples
 
-## Redis Download and Install
+Example of databases usage in `server`.
 
- - About [Redis](http://redis.io/).
- - [Download](http://redis.io/download#download) and [install](http://redis.io/download#installation) latest stable version of Redis.
- - [Documentation](http://redis.io/documentation) about Redis.
-
-## Redis Start
-
-After installation we need to start our server:
-```sh
-# start server
-$ src/redis-server
-```
-
-## Redis More Settings + Daemonize
-
- - Redis [Persistence](http://redis.io/topics/quickstart#redis-persistence)
- - Redis [More Properties](http://redis.io/topics/quickstart#installing-redis-more-properly)
-
-# Mongo
-
- - In progress
-
-# MySQL
-
- - In progress
+- [MySQL Example](#)
+- [PostgreSQL Example](#)
+- [Redis Example](#)
+- [Mongo Example](#)
 
 # Contributing
 
