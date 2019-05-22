@@ -22,6 +22,7 @@ Extensible, reliable and modular starter project for Angular 2 (and beyond) with
 - End-to-end tests with Cypress.
 - Provides full Docker support for both development and production environment
 - Following the [best practices](https://angular.io/guide/styleguide).
+- Share interfaces between UI and Server
 - Support for Angular Mobile Toolkit
 - (TODO) Allows you to analyze the space usage of created bundles by using source-map-explorer
 - [Express](https://expressjs.com/) Node.js server for production/development build API.
