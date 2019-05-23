@@ -24,7 +24,7 @@ Model.knex(knex);
 
 const _clientDir = '../angular-express';
 
-const app: express.Application = express();
+export const app: express.Application = express();
 
 app
   .use(bodyParser.urlencoded({ extended: false }))
