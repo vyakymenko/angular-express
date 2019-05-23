@@ -45,12 +45,6 @@ $ npm run build.dev
 # prod build
 $ npm run build.prod
 
-# run Redis
-$ src/redis-server
-# stop Redis
-$ src/redis-cli
-$ shutdown SAVE
-
 # run server in daemon mode
 $ npm run run.prod
 ```
@@ -113,11 +107,16 @@ git pull upstream master
 # Running tests
 
 ```bash
-$ npm test
+# Server Unit Testing
+$ npm run test.server
+
+
+# UI Unit Testing
+$ test.ui
 
 # Development. Your app will be watched by karma
 # on each change all your specs will be executed.
-$ npm run test.watch
+$ npm run test.ui.watch
 # NB: The command above might fail with a "EMFILE: too many open files" error.
 # Some OS have a small limit of opened file descriptors (256) by default
 # and will result in the EMFILE error.
