@@ -1,5 +1,4 @@
 # Introduction
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 [![CircleCI](https://circleci.com/gh/vyakymenko/angular-express.svg?style=svg)](https://circleci.com/gh/vyakymenko/angular-express)
@@ -8,6 +7,7 @@
 [![dependencies Status](https://david-dm.org/vyakymenko/angular-express/status.svg)](https://david-dm.org/vyakymenko/angular-express)
 [![devDependencies Status](https://david-dm.org/vyakymenko/angular-express/dev-status.svg)](https://david-dm.org/vyakymenko/angular-express?type=dev)
 [![Greenkeeper badge](https://badges.greenkeeper.io/vyakymenko/angular-express.svg)](https://greenkeeper.io/)
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 Extensible, reliable and modular starter project for Angular 2 (and beyond) with Angular CLI, Express and PM2 Daemon. Production Ready Full-stack.
 
@@ -297,10 +297,6 @@ Example of databases usage in `server`.
 - [Redis Example](#)
 - [Mongo Example](#)
 
-# Contributors
-
-TODO
-
 # Contributing
 
 Please see the [CONTRIBUTING](https://github.com/vyakymenko/angular-express/blob/master/.github/CONTRIBUTING.md) file for guidelines.
@@ -308,10 +304,6 @@ Please see the [CONTRIBUTING](https://github.com/vyakymenko/angular-express/blob
 # Changelog
 
 You can follow the [Angular changelog here](https://github.com/angular/angular/blob/master/CHANGELOG.md).
-
-# License
-
-MIT
 
 ## Contributors
 
