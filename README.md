@@ -19,6 +19,7 @@ Extensible, reliable and modular starter project for Angular 2 (and beyond) with
 - Official Angular CLI features support.
 - Ready to go, statically typed build system for working with TypeScript.
 - Production and Development builds.
+- Server Side testing with [Mocha](https://mochajs.org/) and [Chai](https://www.chaijs.com/)
 - End-to-end tests with Cypress.
 - Provides full Docker support for both development and production environment
 - Following the [best practices](https://angular.io/guide/styleguide).
@@ -294,6 +295,10 @@ Example of databases usage in `server`.
 - [PostgreSQL Example](#)
 - [Redis Example](#)
 - [Mongo Example](#)
+
+# Contributors
+
+TODO
 
 # Contributing
 
