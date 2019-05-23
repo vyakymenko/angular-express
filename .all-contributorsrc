@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "vyakymenko",
+      "name": "Valentyn Yakymenko",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7300673?v=4",
+      "profile": "https://vyakymenko.com",
+      "contributions": [
+        "code",
+        "doc",
+        "infra"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "angular-express",
+  "projectOwner": "vyakymenko",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
