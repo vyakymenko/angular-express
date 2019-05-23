@@ -26,8 +26,9 @@
     "e2e.run": "node dist/server/app.js & cypress run",
     "e2e": "npm run build.prod && npm run e2e.run",
     "run.prod": "pm2 start dist/server/app.js",
-    "test": "ng test --watch=false && npm run build.prod",
-    "test.watch": "ng test && npm run build.prod",
+    "test.ui": "ng test --watch=false && npm run build.prod",
+    "test.ui.watch": "ng test && npm run build.prod",
+    "test.server": "npm run server.build && mocha dist/server/**/*.spec.js --exit",
     "test.all": "ng test --watch=false && npm run build.prod && npm run e2e"
   },
   "optionalDependencies": {
