@@ -26,7 +26,7 @@ Extensible, reliable and modular starter project for Angular 2 (and beyond) with
 - Following the [best practices](https://angular.io/guide/styleguide).
 - Share interfaces between UI and Server
 - Support for Angular Mobile Toolkit
-- MySQL, PostgreSQL, Redis, Mongo Examples
+- Contain examples with MySQL, PostgreSQL, Redis, Mongo (TODO)
 - (TODO) Allows you to analyze the space usage of created bundles by using source-map-explorer
 - [Express](https://expressjs.com/) Node.js server for production/development build API.
 - [PM2](http://pm2.keymetrics.io/) daemon for a server running.
@@ -291,11 +291,6 @@ server {
 # Databases Examples
 
 Example of databases usage in `server`.
-
-- [MySQL Example](#)
-- [PostgreSQL Example](#)
-- [Redis Example](#)
-- [Mongo Example](#)
 
 # Contributing
 
