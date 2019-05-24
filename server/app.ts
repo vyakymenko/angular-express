@@ -7,14 +7,18 @@ import * as routes from './routes';
 import * as morgan from 'morgan';
 import * as Knex from 'knex';
 import { Model } from 'objection';
-import { mysql } from './db/mysql';
 
 /** Redis */
 // import { Init } from './db/redis';
 // Init();
 
 /** MySQL */
-const knex = Knex(mysql.development);
+// import { mysql } from './db/mysql';
+// const knex = Knex(mysql.development);
+
+/** PostgreSQL */
+import { pgsql } from './db/postgres';
+const knex = Knex(pgsql.development);
 
 /** Bind all Models to a knex instance. If you only have one database in
  *  your server this is all you have to do. For multi database systems, see
