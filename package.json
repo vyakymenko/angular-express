@@ -83,7 +83,7 @@
     "@types/node": "~8.9.4",
     "codelyzer": "~5.0.1",
     "nodemon": "^1.19.0",
-    "ts-node": "~8.1.0",
+    "ts-node": "~8.2.0",
     "tslint": "~5.16.0",
     "typescript": "~3.2.2"
   }
