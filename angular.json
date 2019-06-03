@@ -27,7 +27,7 @@
               "ui/assets"
             ],
             "styles": [
-              "ui/scss/styles.scss"
+              "ui/styles.scss"
             ],
             "scripts": []
           },
