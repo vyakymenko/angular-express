@@ -4,15 +4,15 @@
   "newProjectRoot": "projects",
   "projects": {
     "angular-express": {
-      "root": "",
-      "sourceRoot": "ui",
       "projectType": "application",
-      "prefix": "ae",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
+      "root": "",
+      "sourceRoot": "ui",
+      "prefix": "ae",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -21,16 +21,15 @@
             "index": "ui/index.html",
             "main": "ui/main.ts",
             "polyfills": "ui/polyfills.ts",
-            "tsConfig": "ui/tsconfig.app.json",
+            "tsConfig": "tsconfig.app.json",
             "assets": [
               "ui/favicon.ico",
               "ui/assets"
             ],
             "styles": [
-              "ui/scss/styles.scss"
+              "ui/styles.scss"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -82,37 +81,31 @@
           "options": {
             "main": "ui/test.ts",
             "polyfills": "ui/polyfills.ts",
-            "tsConfig": "ui/tsconfig.spec.json",
-            "karmaConfig": "ui/karma.conf.js",
-            "styles": [
-              "ui/scss/styles.scss"
-            ],
-            "scripts": [],
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
             "assets": [
               "ui/favicon.ico",
               "ui/assets"
-            ]
+            ],
+            "styles": [
+              "ui/styles.scss"
+            ],
+            "scripts": []
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "ui/tsconfig.app.json",
-              "ui/tsconfig.spec.json"
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
             ]
           }
-        }
-      }
-    },
-    "angular-express-e2e": {
-      "root": "e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
+        },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
@@ -124,18 +117,8 @@
               "devServerTarget": "angular-express:serve:production"
             }
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
-    }
-  },
+    }},
   "defaultProject": "angular-express"
 }
