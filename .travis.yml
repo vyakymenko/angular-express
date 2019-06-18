@@ -27,7 +27,6 @@ before_install:
 
 before_script:
   - npm install
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sh -e /etc/init.d/xvfb start; fi
 
 branches:
   only: master
