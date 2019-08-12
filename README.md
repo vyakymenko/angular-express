@@ -5,8 +5,6 @@
 [![CircleCI](https://circleci.com/gh/vyakymenko/angular-express.svg?style=svg)](https://circleci.com/gh/vyakymenko/angular-express)
 [![Build Status](https://travis-ci.org/vyakymenko/angular-express.svg?branch=master)](https://travis-ci.org/vyakymenko/angular-express)
 [![Gitter](https://badges.gitter.im/express-angular/community.svg)](https://gitter.im/express-angular/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![dependencies Status](https://david-dm.org/vyakymenko/angular-express/status.svg)](https://david-dm.org/vyakymenko/angular-express)
-[![devDependencies Status](https://david-dm.org/vyakymenko/angular-express/dev-status.svg)](https://david-dm.org/vyakymenko/angular-express?type=dev)
 [![Greenkeeper badge](https://badges.greenkeeper.io/vyakymenko/angular-express.svg)](https://greenkeeper.io/)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
