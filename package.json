@@ -1,6 +1,6 @@
 {
   "name": "angular-express",
-  "version": "8.2.1",
+  "version": "8.2.2",
   "description": "Modular starter project for Full Stack Angular 2 (and beyond)/Express with Angular CLI, PM2",
   "repository": {
     "type": "git",
