@@ -79,7 +79,7 @@
     "@angular/compiler-cli": "8.2.2",
     "@angular/language-service": "8.2.2",
     "@types/morgan": "^1.7.35",
-    "@types/node": "~8.9.4",
+    "@types/node": "~12.7.4",
     "codelyzer": "~5.0.1",
     "nodemon": "^1.19.0",
     "ts-node": "~8.3.0",
