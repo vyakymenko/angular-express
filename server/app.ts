@@ -18,7 +18,6 @@ import { Model } from 'objection';
 
 /** PostgreSQL */
 import { pgsql } from './db/postgres';
-import {AddressInfo} from "net";
 const knex = Knex(pgsql.development);
 
 /** Bind all Models to a knex instance. If you only have one database in
