@@ -4,11 +4,11 @@
     "outDir": "./out-tsc/app",
     "types": []
   },
-  "include": [
-    "ui/**/*.ts"
+  "files": [
+    "ui/main.ts",
+    "ui/polyfills.ts"
   ],
-  "exclude": [
-    "ui/test.ts",
-    "ui/**/*.spec.ts"
+  "include": [
+    "ui/**/*.d.ts"
   ]
 }
