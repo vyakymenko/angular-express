@@ -18,6 +18,7 @@ import { Model } from 'objection';
 
 /** PostgreSQL */
 import { pgsql } from './db/postgres';
+import {AddressInfo} from "net";
 const knex = Knex(pgsql.development);
 
 /** Bind all Models to a knex instance. If you only have one database in
@@ -71,7 +72,7 @@ app.get('/*', renderIndex);
 /**
  * Server with gzip compression.
  */
-const server: http.Server  = app.listen(3000);
-const serverPort: number = server.address().port;
+const serverPort = 3000;
+const server: http.Server = app.listen(serverPort);
 
 console.log(`App is listening on port: ${serverPort}`);
