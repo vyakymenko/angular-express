@@ -75,7 +75,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.901.0",
-    "@angular/cli": "9.1.0",
+    "@angular/cli": "9.1.1",
     "@angular/compiler-cli": "9.1.0",
     "@angular/language-service": "9.1.0",
     "@types/morgan": "^1.7.35",
