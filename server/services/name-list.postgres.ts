@@ -13,7 +13,7 @@ export function nameListPostgres(app: express.Application) {
 
       const names = await Scientist.query()
         .skipUndefined()
-        .eager(req.query.eager)
+        .eager(req.query)
         .orderBy('first_name')
         .map(({ first_name, last_name }: ScientistInterface) => `${first_name} ${last_name}`);
 
