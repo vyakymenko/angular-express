@@ -63,7 +63,7 @@
     "@types/redis": "^2.8.26",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "knex": "^0.21.13",
     "morgan": "^1.9.1",
     "mysql2": "^2.2.5",
