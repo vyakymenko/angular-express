@@ -46,7 +46,7 @@
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "cypress": "^4.0.0",
-    "mocha": "^7.0.1"
+    "mocha": "^10.2.0"
   },
   "dependencies": {
     "@angular/animations": "10.2.2",
